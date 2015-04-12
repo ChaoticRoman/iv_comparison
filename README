@@ -1,0 +1,16 @@
+= A comparison of current-limiter designs for LED lighting =
+Roman Pavelka <ChaoticRoman@seznam.cz>
+Revision 0, 2015-04-12: Initital version
+
+== Mission statement ==
+The aim of this effort is to choose simple and reliable LED driver design.
+Both linear and switched mode power supplies circuit and commercial modules
+should be considered from simple linear NPN fixed-current driver
+
+
+Important parameters of each design are input voltage range, current rating,
+line and load regulation, over-current protection (OCP), thermal protection,
+adjustability.
+
+
+
