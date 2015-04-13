@@ -33,20 +33,20 @@ Requirements specification
     - SMPS buck and boost topologies.
 * RM3: The report to be delivered shall describe compared solutions, parameters
        of interest are:
-            * input voltage range
-            * over-current protection (OCP)
-            * current rating
-            * line and load regulation
-            * efficiency
-            * thermal protection
-            * overvoltage protection
-            * inrush current, soft-start
-            * failure modes, reliability
-            * adjustability
-            * diagnostics
-            * price
-            * size
-            * EM emissions
+    - input voltage range
+    - over-current protection (OCP)
+    - current rating
+    - line and load regulation
+    - efficiency
+    - thermal protection
+    - overvoltage protection
+    - inrush current, soft-start
+    - failure modes, reliability
+    - adjustability
+    - diagnostics
+    - price
+    - size
+    - EM emissions
 
 
 ### Functional requirements
