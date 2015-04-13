@@ -36,6 +36,5 @@ Mission requirements specification
 Req.| Requirement definiton
 ----|------------------------------------------------------------------
 R1  | Proposed devices should be able to operate from single
-    | adjustable 12-32V DC power supply.
+      adjustable 12-32V DC power supply.
 R2  | Proposed devices should deliver adjustable DC current up to 1A.
-----|------------------------------------------------------------------
