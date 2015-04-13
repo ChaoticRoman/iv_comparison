@@ -35,13 +35,13 @@ and example layout, BOM, budget and proof-of-concept device shall be delivered.
 Requirements specification
 --------------------------
 
-=== Functional requirements
+### Functional requirements
 * RF1 Proposed devices should be able to operate from single adjustable 12-32V DC power supply.
 * RF2: Proposed devices should deliver DC current from 0A (high power LED is OFF even in darkness)
        up to 1A to the single load.
 * RF3: Delivered current shall be adjustable at least by trimmer.
 
-=== Physical requirements
+### Physical requirements
 * RP1: Single channel module shall be limited in dimensions by 40mm x 15mm x 10mm.
 
 
