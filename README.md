@@ -64,8 +64,19 @@ LED is OFF even in darkness) up to 1.25A to the single load.
 System concept
 --------------
 
+### Commercial SMPS modules
 Following commercial SMPS modules should be evaluated:
 * Meanwell [LDD-1000L](http://www.mouser.com/ProductDetail/Mean-Well/LDD-1000L/?qs=sGAEpiMZZMt5PRBMPTWcaRgaVnaXJTVtYzeCn%2f%252bnvqOhpAqVGeWTIA%3d%3d)
 * Chineese drivers based on LM2596S available on ebay:
-    - [simpler current-adjustable]
-    - [voltage/current/]
+    - [currrent-adjustable module](http://www.ebay.com/itm/LM2596-DC-DC-Step-down-LED-Driver-Adjustable-Power-Supply-Module-Converter-/131219116497?pt=LH_DefaultDomain_3&hash=item1e8d44d1d1)
+    - [voltage/current/indication adjustable module](http://www.ebay.com/itm/LED-New-Driver-DC-DC-Step-down-Adjustable-CC-CV-Power-Supply-Module-1PC-LM2596-/141524043875?pt=LH_DefaultDomain_15&hash=item20f37d8863)
+
+### Linear circuits
+
+#### NPN based regulator
+    
+    
+    
+    
+    
+    
