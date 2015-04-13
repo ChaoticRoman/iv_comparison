@@ -33,8 +33,8 @@ and example layout, BOM, budget and proof-of-concept device shall be delivered.
 Mission requirements specification
 ----------------------------------
 
-### R1
-Proposed devices should be able to operate from single adjustable 12-32V DC power supply.
-
-### R2
-Proposed devices should deliver adjustable DC current up to 1A.
+R1  | Proposed devices should be able to operate from single
+    | adjustable 12-32V DC power supply.
+----|------------------------------------------------------------------
+R2  | Proposed devices should deliver adjustable DC current up to 1A.
+----|------------------------------------------------------------------
