@@ -7,7 +7,7 @@ Revision history:
 1. 2015-04-12, RP: Initital version
 2. 2015-04-13, RP: goals refinement
 
-Mission statement
+Project statement
 -----------------
 The aim of this effort is to choose simple and reliable LED driver design.
 Both linear and switched mode power supplies circuits and commercial modules
@@ -33,6 +33,8 @@ and example layout, BOM, budget and proof-of-concept device shall be delivered.
 Mission requirements specification
 ----------------------------------
 
-R1: Proposed devices should be able to operate from single adjustable 12-32V DC power supply.
+### R1
+Proposed devices should be able to operate from single adjustable 12-32V DC power supply.
 
-R2: Proposed device should deliver adjustable DC current up to 1A.
+### R2
+Proposed devices should deliver adjustable DC current up to 1A.
