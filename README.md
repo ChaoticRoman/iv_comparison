@@ -6,6 +6,7 @@ Revision history:
 
 1. 2015-04-12, RP: Initial version
 2. 2015-04-13, RP: Goals refinement, requirements added.
+2. 2015-04-15, RP: size requirement removed, commercial designs, NPN
 
 
 Project statement
@@ -66,7 +67,7 @@ LED is OFF even in darkness) up to 1.25A to the single load.
 System concept
 --------------
 
-### Commercial SMPS modules
+### Commercial SMPS modules to be explored
 
 Following commercial SMPS modules should be evaluated:
 
@@ -80,6 +81,7 @@ Following commercial SMPS modules should be evaluated:
 
 #### NPN based regulator
 
+![simple NPN current regulator](./ideas/NPN_I-regulator_principle/NPN_I-regulator_principle.png)
 
 
 #### Operational Amplifier based regulator
@@ -88,6 +90,7 @@ Following commercial SMPS modules should be evaluated:
 ### Switched-mode power supplies circuits
 
 #### TL494 based solutions
+
 
 #### LM2576T based solutions
     
