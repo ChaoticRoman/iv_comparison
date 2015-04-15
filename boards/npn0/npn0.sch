@@ -50,7 +50,7 @@ U 1 1 552D5C5A
 P 7250 3300
 F 0 "P2" H 7350 3350 50  0000 C CNN
 F 1 "CONN_01X02" H 7550 3250 50  0000 C CNN
-F 2 "Connect:bornier2" H 7450 3000 60  0000 C CNN
+F 2 "Connect:bornier2" H 7800 3350 60  0000 C CNN
 F 3 "" H 7250 3300 60  0000 C CNN
 	1    7250 3300
 	1    0    0    -1  
@@ -72,7 +72,7 @@ U 1 1 552D5D83
 P 6950 3850
 F 0 "Q1" H 6900 3700 40  0000 R CNN
 F 1 "TIP122" H 6950 4000 40  0000 R CNN
-F 2 "Transistors_TO-220:TO-220_Bipolar-BCE_Horizontal_MountedFromLS_LargePads" H 7700 3600 20  0000 C CNN
+F 2 "Transistors_TO-220:TO-220_Bipolar-BCE_Horizontal_MountedFromLS_LargePads" H 7950 3900 25  0000 C CNN
 F 3 "" H 6950 3850 60  0000 C CNN
 	1    6950 3850
 	1    0    0    -1  
@@ -128,14 +128,14 @@ Wire Wire Line
 Connection ~ 7050 2850
 Connection ~ 6050 3850
 Wire Wire Line
-	5350 4900 7050 4900
+	5000 4900 7050 4900
 $Comp
 L BC817-40 Q2
 U 1 1 552D898C
 P 5250 4250
 F 0 "Q2" H 5250 4101 40  0000 R CNN
 F 1 "BC817-40" H 5250 4500 40  0000 R CNN
-F 2 "SOT-23" H 5150 4000 29  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 5250 4750 29  0000 C CNN
 F 3 "" H 5250 4250 60  0000 C CNN
 	1    5250 4250
 	1    0    0    -1  
@@ -146,7 +146,7 @@ U 1 1 552D8B76
 P 4800 4250
 F 0 "R2" V 4880 4250 50  0000 C CNN
 F 1 "1k" V 4807 4251 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4700 4250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4450 4550 30  0000 C CNN
 F 3 "" H 4800 4250 30  0000 C CNN
 	1    4800 4250
 	0    -1   -1   0   
@@ -239,7 +239,7 @@ U 1 1 552D9A44
 P 6150 4250
 F 0 "Q3" H 6150 4101 40  0000 R CNN
 F 1 "BC817-40" H 6150 4500 40  0000 R CNN
-F 2 "SOT-23" H 6100 4000 29  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 5800 4400 20  0000 C CNN
 F 3 "" H 6150 4250 60  0000 C CNN
 	1    6150 4250
 	-1   0    0    -1  
@@ -278,8 +278,8 @@ Text Notes 3950 2550 0    60   ~ 0
 24V DC INPUT
 Text Notes 6100 3650 0    40   ~ 0
 TIP122: h_FE>3000 @ 1.25A\n2 mA * 24 V < 50 mW
-Text Notes 7200 4050 0    30   ~ 0
-COLLECTOR CUTOFF CURRENT\nI_CE0 < 0.5 mA\n\nhow much it is?\nit will light-up high-voltage, high-power LEDs?
+Text Notes 7200 4150 0    40   ~ 0
+COLLECTOR CUTOFF CURRENT\nI_CE0 < 0.5 mA\n\nhow much it is?\nit will light-up high-power LEDs?
 Connection ~ 7050 4400
 Connection ~ 7050 4700
 $Comp
@@ -307,7 +307,7 @@ U 1 1 552DB4F6
 P 4850 3000
 F 0 "C1" H 4875 3100 50  0000 L CNN
 F 1 "1n" H 4875 2900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4600 3250 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4850 3200 30  0000 C CNN
 F 3 "" H 4850 3000 60  0000 C CNN
 	1    4850 3000
 	1    0    0    -1  
@@ -330,7 +330,7 @@ U 1 1 552DBCA0
 P 6800 3300
 F 0 "C5" H 6825 3400 50  0000 L CNN
 F 1 "1n" H 6825 3200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6800 2800 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7550 3100 30  0000 C CNN
 F 3 "" H 6800 3300 60  0000 C CNN
 	1    6800 3300
 	1    0    0    -1  
@@ -355,7 +355,7 @@ U 1 1 552DC32E
 P 6550 3300
 F 0 "C4" H 6575 3400 50  0000 L CNN
 F 1 "100n" H 6575 3200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6300 3550 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7550 3150 30  0000 C CNN
 F 3 "" H 6550 3300 60  0000 C CNN
 	1    6550 3300
 	1    0    0    -1  
@@ -366,7 +366,7 @@ U 1 1 552DC3A6
 P 6300 3300
 F 0 "C3" H 6325 3400 50  0000 L CNN
 F 1 "1u" H 6325 3200 50  0000 L CNN
-F 2 "" H 6338 3150 30  0000 C CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x7.5mm_RM2.5_CopperClear" H 7650 3050 20  0000 C CNN
 F 3 "" H 6300 3300 60  0000 C CNN
 	1    6300 3300
 	1    0    0    -1  
@@ -375,4 +375,21 @@ Connection ~ 6800 3150
 Connection ~ 6550 3150
 Connection ~ 6800 3450
 Connection ~ 6550 3450
+$Comp
+L R R5
+U 1 1 552DB7F3
+P 5000 4600
+F 0 "R5" V 5080 4600 50  0000 C CNN
+F 1 "10k" V 5007 4601 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4500 4500 30  0000 C CNN
+F 3 "" H 5000 4600 30  0000 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4450 5000 4250
+Connection ~ 5000 4250
+Wire Wire Line
+	5000 4750 5000 4900
+Connection ~ 5350 4900
 $EndSCHEMATC

@@ -93,6 +93,19 @@ Following commercial SMPS modules should be evaluated:
 
 
 #### LM2576T based solutions
+
+### Test tools
+
+
+
+Detailed design
+---------------
+
+### Linear regulators
+
+#### NPN based regulator
+
+![simple NPN current regulator](./boards/npn0/npn0.png)
     
     
     
