@@ -58,9 +58,9 @@ supplies are allowed.
 LED is OFF even in darkness) up to 1.25A to the single load.
 * RF3: Delivered current shall be adjustable at least by trimmer.
 
-### Physical requirements
+<!--### Physical requirements
 
-* RD1: Single channel module shall be limited in dimensions by 40mm x 15mm x 10mm.
+* RD1: Single channel module shall be limited in dimensions by 40mm x 15mm x 10mm.-->
 
 
 System concept
@@ -79,6 +79,8 @@ Following commercial SMPS modules should be evaluated:
 ### Linear regulators
 
 #### NPN based regulator
+
+
 
 #### Operational Amplifier based regulator
     
