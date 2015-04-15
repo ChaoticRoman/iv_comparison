@@ -57,7 +57,7 @@ of parameters of Meanwell RS-150-XX power supplies series but additional linear 
 supplies are allowed.
 * RF2: Proposed devices should deliver current-limited DC adjustable from 0A (high power
 LED is OFF even in darkness) up to 1.25A to the single load.
-* RF3: Delivered current shall be adjustable at least by trimmer.
+* RF3: Delivered current shall be adjustable.
 
 <!--### Physical requirements
 
@@ -81,12 +81,18 @@ Following commercial SMPS modules should be evaluated:
 
 #### NPN based regulator
 
+This is basic idea of NPN current regulator
+
 ![simple NPN current regulator](./ideas/NPN_I-regulator_principle/NPN_I-regulator_principle.png)
 
 
-#### Operational Amplifier based regulator
-    
-   
+#### Operational amplifier based regulator
+
+This is basic idea of Operational amplifier based current regulator
+
+![simple NPN current regulator](./ideas/opAmp-principle1/opAmp-principle1.png)
+
+
 ### Switched-mode power supplies circuits
 
 #### TL494 based solutions
@@ -107,6 +113,8 @@ Detailed design
 
 ![simple NPN current regulator](./boards/npn0/npn0.png)
     
+#### Operational Amplifier based regulators
+
+![simple NPN current regulator](./boards/npn1/npn1.png)
     
-    
-    
+
