@@ -6,7 +6,8 @@ Revision history:
 
 1. 2015-04-12, RP: Initial version
 2. 2015-04-13, RP: Goals refinement, requirements added.
-2. 2015-04-15, RP: requirement mods, commercial designs, NPN and opAmp designs
+3. 2015-04-15, RP: requirements modified, commercial designs, designing
+4. 2015-04-17, RP: NPN and opAmp designs, test platform
 
 
 Project statement
