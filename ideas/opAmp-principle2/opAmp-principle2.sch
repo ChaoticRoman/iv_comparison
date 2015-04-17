@@ -1,0 +1,604 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:opAmp-principle2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM324N U1
+U 1 1 552FC1B4
+P 7850 4400
+F 0 "U1" H 7900 4600 60  0000 C CNN
+F 1 "LM324N" H 8000 4200 50  0000 C CNN
+F 2 "" H 7850 4400 60  0000 C CNN
+F 3 "" H 7850 4400 60  0000 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q1
+U 1 1 552FC1B5
+P 6300 3500
+F 0 "Q1" H 6600 3500 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 6900 3450 50  0001 R CNN
+F 2 "" H 6500 3600 29  0000 C CNN
+F 3 "" H 6300 3500 60  0000 C CNN
+	1    6300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 552FC1B6
+P 5450 3050
+F 0 "R1" V 5350 3050 50  0000 C CNN
+F 1 "20k" V 5450 3050 50  0000 C CNN
+F 2 "" V 5380 3050 30  0000 C CNN
+F 3 "" H 5450 3050 30  0000 C CNN
+	1    5450 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 552FC1B7
+P 6400 4450
+F 0 "R7" H 6250 4400 50  0000 C CNN
+F 1 "0R1" H 6250 4500 50  0000 C CNN
+F 2 "" V 6330 4450 30  0000 C CNN
+F 3 "" H 6400 4450 30  0000 C CNN
+	1    6400 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 552FC1B8
+P 6400 4750
+F 0 "#PWR6" H 6400 4500 50  0001 C CNN
+F 1 "GND" H 6400 4600 50  0000 C CNN
+F 2 "" H 6400 4750 60  0000 C CNN
+F 3 "" H 6400 4750 60  0000 C CNN
+	1    6400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +24V #PWR1
+U 1 1 552FC1BA
+P 6400 2700
+F 0 "#PWR1" H 6400 2550 50  0001 C CNN
+F 1 "+24V" H 6400 2840 50  0000 C CNN
+F 2 "" H 6400 2700 60  0000 C CNN
+F 3 "" H 6400 2700 60  0000 C CNN
+	1    6400 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 6550 3200 0    60   ~ 0
+LED OUT\nwhich output capacitors are required?
+Text Notes 8700 5100 0    40   ~ 0
+0-4.125 V ref.\nZout << 4k7
+$Comp
+L GND #PWR2
+U 1 1 552FC1BC
+P 8150 4000
+F 0 "#PWR2" H 8150 3750 50  0001 C CNN
+F 1 "GND" H 8150 3850 50  0000 C CNN
+F 2 "" H 8150 4000 60  0000 C CNN
+F 3 "" H 8150 4000 60  0000 C CNN
+	1    8150 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 7600 3650 0    40   ~ 0
+opAmp VCC
+$Comp
+L Q_NPN_BCE Q3
+U 1 1 552FC1BD
+P 5350 4450
+F 0 "Q3" H 5650 4450 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 5950 4400 50  0001 R CNN
+F 2 "" H 5550 4550 29  0000 C CNN
+F 3 "" H 5350 4450 60  0000 C CNN
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 552FC1BE
+P 4950 4450
+F 0 "R6" V 4850 4400 50  0000 C CNN
+F 1 "2k" V 4950 4450 50  0000 C CNN
+F 2 "" V 4880 4450 30  0000 C CNN
+F 3 "" H 4950 4450 30  0000 C CNN
+	1    4950 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NPN_BCE Q2
+U 1 1 552FC442
+P 4950 3750
+F 0 "Q2" H 5250 3750 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 5550 3700 50  0001 R CNN
+F 2 "" H 5150 3850 29  0000 C CNN
+F 3 "" H 4950 3750 60  0000 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 552FC44B
+P 4450 3750
+F 0 "R2" V 4350 3750 50  0000 C CNN
+F 1 "4k7" V 4450 3750 50  0000 C CNN
+F 2 "" V 4380 3750 30  0000 C CNN
+F 3 "" H 4450 3750 30  0000 C CNN
+	1    4450 3750
+	0    1    1    0   
+$EndComp
+Text Notes 4150 3600 0    60   ~ 0
+TTL shutdown
+$Comp
+L C_Small C1
+U 1 1 552FC1BB
+P 7950 3900
+F 0 "C1" V 8050 3950 50  0000 L CNN
+F 1 "100nF" V 8050 3600 50  0000 L CNN
+F 2 "" H 7950 3900 60  0000 C CNN
+F 3 "" H 7950 3900 60  0000 C CNN
+	1    7950 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 552FC56C
+P 7750 4800
+F 0 "#PWR7" H 7750 4550 50  0001 C CNN
+F 1 "GND" H 7750 4650 50  0000 C CNN
+F 2 "" H 7750 4800 60  0000 C CNN
+F 3 "" H 7750 4800 60  0000 C CNN
+	1    7750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 552FC809
+P 5050 4150
+F 0 "#PWR5" H 5050 3900 50  0001 C CNN
+F 1 "GND" H 5050 4000 50  0000 C CNN
+F 2 "" H 5050 4150 60  0000 C CNN
+F 3 "" H 5050 4150 60  0000 C CNN
+	1    5050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 552FC9E8
+P 7000 4300
+F 0 "R4" V 6900 4300 50  0000 C CNN
+F 1 "100R" V 7000 4300 50  0000 C CNN
+F 2 "" V 6930 4300 30  0000 C CNN
+F 3 "" H 7000 4300 30  0000 C CNN
+	1    7000 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 552FCAEF
+P 7000 4000
+F 0 "R3" V 6900 4000 50  0000 C CNN
+F 1 "3k3" V 7000 4000 50  0000 C CNN
+F 2 "" V 6930 4000 30  0000 C CNN
+F 3 "" H 7000 4000 30  0000 C CNN
+	1    7000 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 552FCB67
+P 6750 4050
+F 0 "#PWR3" H 6750 3800 50  0001 C CNN
+F 1 "GND" H 6750 3900 50  0000 C CNN
+F 2 "" H 6750 4050 60  0000 C CNN
+F 3 "" H 6750 4050 60  0000 C CNN
+	1    6750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 552FCE25
+P 7000 4600
+F 0 "R5" V 6900 4600 50  0000 C CNN
+F 1 "100R" V 7000 4600 50  0000 C CNN
+F 2 "" V 6930 4600 30  0000 C CNN
+F 3 "" H 7000 4600 30  0000 C CNN
+	1    7000 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 552FD029
+P 7850 5100
+F 0 "R8" V 7950 5100 50  0000 C CNN
+F 1 "3k3" V 7850 5100 50  0000 C CNN
+F 2 "" V 7780 5100 30  0000 C CNN
+F 3 "" H 7850 5100 30  0000 C CNN
+	1    7850 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LM324N U1
+U 2 1 552FE550
+P 9800 4500
+F 0 "U1" H 9850 4700 60  0000 C CNN
+F 1 "LM324N" H 9950 4300 50  0000 C CNN
+F 2 "" H 9800 4500 60  0000 C CNN
+F 3 "" H 9800 4500 60  0000 C CNN
+	2    9800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 552FEA84
+P 8950 4000
+F 0 "R10" V 8850 4000 50  0000 C CNN
+F 1 "100k" V 8950 4000 50  0000 C CNN
+F 2 "" V 8880 4000 30  0000 C CNN
+F 3 "" H 8950 4000 30  0000 C CNN
+	1    8950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 552FEA8A
+P 8700 4050
+F 0 "#PWR4" H 8700 3800 50  0001 C CNN
+F 1 "GND" H 8700 3900 50  0000 C CNN
+F 2 "" H 8700 4050 60  0000 C CNN
+F 3 "" H 8700 4050 60  0000 C CNN
+	1    8700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 552FEC4A
+P 9800 5100
+F 0 "R14" V 9900 5100 50  0000 C CNN
+F 1 "100k" V 9800 5100 50  0000 C CNN
+F 2 "" V 9730 5100 30  0000 C CNN
+F 3 "" H 9800 5100 30  0000 C CNN
+	1    9800 5100
+	0    1    1    0   
+$EndComp
+Text Notes 8300 3600 0    60   ~ 0
+3.3V / 1A
+Text Notes 9600 3700 0    60   ~ 0
+10mA more -> 33mV diff\n-> 660mV diff
+Wire Wire Line
+	6400 3700 6400 4300
+Wire Wire Line
+	6400 3200 6400 3300
+Wire Wire Line
+	5850 3200 6050 3200
+Wire Wire Line
+	6050 3200 6250 3200
+Wire Wire Line
+	6250 3200 6400 3200
+Wire Wire Line
+	6400 3200 6500 3200
+Wire Wire Line
+	5850 3000 6050 3000
+Wire Wire Line
+	6050 3000 6250 3000
+Wire Wire Line
+	6250 3000 6400 3000
+Wire Wire Line
+	6400 3000 6500 3000
+Wire Wire Line
+	6400 2700 6400 2800
+Wire Wire Line
+	6400 2800 6400 3000
+Wire Wire Line
+	7750 3900 7850 3900
+Wire Wire Line
+	8050 3900 8150 3900
+Wire Wire Line
+	8150 3900 8150 4000
+Connection ~ 7750 3900
+Wire Wire Line
+	6400 4750 6400 4600
+Wire Wire Line
+	5450 4650 5450 4750
+Wire Wire Line
+	5450 3200 5450 3500
+Wire Wire Line
+	5450 3500 5450 4250
+Connection ~ 5450 3500
+Wire Wire Line
+	5100 4450 5150 4450
+Wire Wire Line
+	5450 2900 5450 2800
+Wire Wire Line
+	5450 2800 6400 2800
+Connection ~ 6400 2800
+Wire Wire Line
+	5050 3500 5450 3500
+Wire Wire Line
+	5450 3500 5800 3500
+Wire Wire Line
+	5800 3500 6100 3500
+Wire Wire Line
+	5050 3950 5050 4100
+Wire Wire Line
+	5050 4100 5050 4150
+Wire Wire Line
+	4600 3750 4650 3750
+Wire Wire Line
+	4650 3750 4750 3750
+Wire Wire Line
+	4300 3750 4150 3750
+Wire Wire Line
+	7750 3700 7750 3900
+Wire Wire Line
+	7750 3900 7750 4000
+Wire Wire Line
+	5050 3500 5050 3550
+Wire Wire Line
+	7150 4300 7250 4300
+Wire Wire Line
+	7250 4300 7350 4300
+Connection ~ 7250 4300
+Wire Wire Line
+	6750 4050 6750 4000
+Wire Wire Line
+	6750 4000 6850 4000
+Wire Wire Line
+	7150 4000 7250 4000
+Wire Wire Line
+	7250 4000 7250 4300
+Wire Wire Line
+	7250 4500 7250 4600
+Wire Wire Line
+	7250 4600 7250 5100
+Wire Wire Line
+	7250 5100 7700 5100
+Wire Wire Line
+	8450 4400 8450 5100
+Wire Wire Line
+	8450 5100 8000 5100
+Wire Wire Line
+	4800 4450 4650 4450
+Wire Wire Line
+	4650 4450 4650 5300
+Connection ~ 8450 4400
+Wire Wire Line
+	6400 4300 6850 4300
+Wire Wire Line
+	6400 4600 6850 4600
+Wire Wire Line
+	8350 4400 8450 4400
+Wire Wire Line
+	8450 4400 8800 4400
+Wire Wire Line
+	9100 4400 9200 4400
+Wire Wire Line
+	9200 4400 9300 4400
+Wire Wire Line
+	8700 4050 8700 4000
+Wire Wire Line
+	8700 4000 8800 4000
+Wire Wire Line
+	9100 4000 9200 4000
+Wire Wire Line
+	9200 4000 9200 4400
+Connection ~ 9200 4400
+Wire Wire Line
+	9200 5100 9650 5100
+Wire Wire Line
+	9950 5100 10400 5100
+Wire Wire Line
+	10300 4500 10400 4500
+Wire Wire Line
+	10400 4500 10400 5100
+Wire Wire Line
+	10400 5100 10400 5300
+Wire Wire Line
+	7150 4600 7250 4600
+Connection ~ 7250 4600
+Wire Wire Line
+	7250 4500 7350 4500
+Wire Wire Line
+	8800 4600 8650 4600
+Wire Wire Line
+	10400 5300 4650 5300
+Connection ~ 10400 5100
+Wire Wire Line
+	8650 4600 8650 5150
+Wire Wire Line
+	8650 5150 8800 5150
+Wire Wire Line
+	9100 4600 9200 4600
+Wire Wire Line
+	9200 4600 9300 4600
+Wire Wire Line
+	9200 4600 9200 5100
+Connection ~ 9200 4600
+Wire Notes Line
+	8450 3650 8450 4300
+Wire Notes Line
+	8450 4300 8500 4150
+Wire Notes Line
+	8450 4300 8400 4150
+Wire Notes Line
+	10400 4400 10450 4250
+Wire Notes Line
+	10350 4250 10400 4400
+Wire Notes Line
+	10400 4400 10400 3650
+$Comp
+L R R11
+U 1 1 55300FF5
+P 8950 4400
+F 0 "R11" V 8850 4400 50  0000 C CNN
+F 1 "4k7" V 8950 4400 50  0000 C CNN
+F 2 "" V 8880 4400 30  0000 C CNN
+F 3 "" H 8950 4400 30  0000 C CNN
+	1    8950 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 55301073
+P 8950 4600
+F 0 "R13" V 8850 4600 50  0000 C CNN
+F 1 "4k7" V 8950 4600 50  0000 C CNN
+F 2 "" V 8880 4600 30  0000 C CNN
+F 3 "" H 8950 4600 30  0000 C CNN
+	1    8950 4600
+	0    1    1    0   
+$EndComp
+Text Notes 7900 2950 0    100  ~ 20
+How to study stability?
+Text Notes 6750 3850 0    40   ~ 0
+3k3 and 100R is tuned\nto minimize I_offset error.
+Text Notes 6900 3450 0    60   ~ 0
+33x gain differential amplifier
+Text Notes 8900 3450 0    60   ~ 0
+21x gain differential amplifier
+Text Notes 8650 3850 0    40   ~ 0
+to minimize 0-2.5V reference\noutput impedance error
+Text Notes 4400 4350 0    40   ~ 0
+adjust according\nto opAmp VCC\n(5V -> 2k)
+Connection ~ 6400 4600
+Connection ~ 6400 4300
+$Comp
+L C_Small C4
+U 1 1 55314061
+P 6250 3100
+F 0 "C4" H 6200 2850 50  0000 L CNN
+F 1 "1nF" H 6200 2950 50  0000 L CNN
+F 2 "" H 6250 3100 60  0000 C CNN
+F 3 "" H 6250 3100 60  0000 C CNN
+	1    6250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 553141C7
+P 6050 3100
+F 0 "C3" H 6000 2850 50  0000 L CNN
+F 1 "100nF" H 5950 2950 50  0000 L CNN
+F 2 "" H 6050 3100 60  0000 C CNN
+F 3 "" H 6050 3100 60  0000 C CNN
+	1    6050 3100
+	-1   0    0    1   
+$EndComp
+Connection ~ 6400 3000
+Connection ~ 6250 3000
+Connection ~ 6400 3200
+Connection ~ 6250 3200
+$Comp
+L CP_Small C2
+U 1 1 553144D2
+P 5850 3100
+F 0 "C2" H 5800 3350 50  0000 L CNN
+F 1 "100u" H 5700 3250 50  0000 L CNN
+F 2 "" H 5850 3100 60  0000 C CNN
+F 3 "" H 5850 3100 60  0000 C CNN
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 3000
+Connection ~ 6050 3200
+$Comp
+L R R9
+U 1 1 553157B2
+P 4650 3950
+F 0 "R9" V 4550 3950 50  0000 C CNN
+F 1 "20k" V 4650 3950 50  0000 C CNN
+F 2 "" V 4580 3950 30  0000 C CNN
+F 3 "" H 4650 3950 30  0000 C CNN
+	1    4650 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4100 5050 4100
+Connection ~ 5050 4100
+Wire Wire Line
+	4650 3800 4650 3750
+Connection ~ 4650 3750
+$Comp
+L R R12
+U 1 1 553163C5
+P 5150 4600
+F 0 "R12" V 5050 4600 50  0000 C CNN
+F 1 "20k" V 5150 4600 50  0000 C CNN
+F 2 "" V 5080 4600 30  0000 C CNN
+F 3 "" H 5150 4600 30  0000 C CNN
+	1    5150 4600
+	-1   0    0    1   
+$EndComp
+Connection ~ 5150 4450
+Wire Wire Line
+	5150 4750 5450 4750
+Wire Wire Line
+	5450 4750 5800 4750
+Wire Wire Line
+	5800 4750 6400 4750
+Connection ~ 5450 4750
+Connection ~ 6400 4750
+$Comp
+L C_Small C5
+U 1 1 55317990
+P 5800 4150
+F 0 "C5" H 5950 4150 50  0000 L CNN
+F 1 "100nF" H 5450 4150 50  0000 L CNN
+F 2 "" H 5800 4150 60  0000 C CNN
+F 3 "" H 5800 4150 60  0000 C CNN
+	1    5800 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 4050 5800 3500
+Connection ~ 5800 3500
+Wire Wire Line
+	5800 4250 5800 4750
+Connection ~ 5800 4750
+Text Notes 5850 4050 0    30   ~ 0
+serve as softstart\n0.1u*20k = 2ms,\nbut can't it introduce \nsome oscillations?
+$EndSCHEMATC

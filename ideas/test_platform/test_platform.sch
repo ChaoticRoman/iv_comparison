@@ -1,0 +1,352 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:test_platform-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P1
+U 1 1 552EC6B1
+P 1450 1500
+F 0 "P1" H 1450 1650 50  0000 C CNN
+F 1 "CONN_01X02" V 1550 1500 50  0000 C CNN
+F 2 "" H 1450 1500 60  0000 C CNN
+F 3 "" H 1450 1500 60  0000 C CNN
+	1    1450 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 552EC7BC
+P 2200 1500
+F 0 "C1" H 2150 1800 50  0000 L CNN
+F 1 "1n" H 2150 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 2200 850 30  0001 C CNN
+F 3 "" H 2200 1500 60  0000 C CNN
+	1    2200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 552EC8E4
+P 2400 1500
+F 0 "C2" H 2350 1800 50  0000 L CNN
+F 1 "100n" H 2300 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 2400 850 30  0001 C CNN
+F 3 "" H 2400 1500 60  0000 C CNN
+	1    2400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1450 1950 1450
+Wire Wire Line
+	1950 1450 1950 1400
+Wire Wire Line
+	1950 1400 3800 1400
+Wire Wire Line
+	1650 1550 1950 1550
+Wire Wire Line
+	1950 1550 1950 1600
+Wire Wire Line
+	1950 1600 3800 1600
+Connection ~ 2200 1600
+Connection ~ 2200 1400
+$Comp
+L CP_Small C3
+U 1 1 552ECA41
+P 2600 1500
+F 0 "C3" H 2550 1800 50  0000 L CNN
+F 1 "100u" H 2550 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" V 2600 950 30  0001 C CNN
+F 3 "" H 2600 1500 60  0000 C CNN
+	1    2600 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 1400
+Connection ~ 2400 1600
+$Comp
+L D_Small D1
+U 1 1 552ECBA2
+P 3000 1500
+F 0 "D1" V 3300 1450 50  0000 L CNN
+F 1 "P1000K" V 3200 1350 50  0000 L CNN
+F 2 "" V 3000 1500 60  0000 C CNN
+F 3 "" V 3000 1500 60  0000 C CNN
+	1    3000 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2600 1400
+Connection ~ 2600 1600
+$Comp
+L GND #PWR2
+U 1 1 552ECD11
+P 3800 1650
+F 0 "#PWR2" H 3800 1400 50  0001 C CNN
+F 1 "GND" H 3800 1500 50  0000 C CNN
+F 2 "" H 3800 1650 60  0000 C CNN
+F 3 "" H 3800 1650 60  0000 C CNN
+	1    3800 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 1600
+Connection ~ 3000 1400
+$Comp
+L +24V #PWR1
+U 1 1 552ECD5A
+P 3800 1350
+F 0 "#PWR1" H 3800 1200 50  0001 C CNN
+F 1 "+24V" H 3800 1500 50  0000 C CNN
+F 2 "" H 3800 1350 60  0000 C CNN
+F 3 "" H 3800 1350 60  0000 C CNN
+	1    3800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 552ECD91
+P 1800 1450
+F 0 "#FLG1" H 1800 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1630 50  0000 C CNN
+F 2 "" H 1800 1450 60  0000 C CNN
+F 3 "" H 1800 1450 60  0000 C CNN
+	1    1800 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 1450
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 552ECDC5
+P 1800 1550
+F 0 "#FLG2" H 1800 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1730 50  0000 C CNN
+F 2 "" H 1800 1550 60  0000 C CNN
+F 3 "" H 1800 1550 60  0000 C CNN
+	1    1800 1550
+	-1   0    0    1   
+$EndComp
+Connection ~ 1800 1550
+Text Notes 1400 3450 0    60   ~ 0
+POWER SUPPLY
+Text Notes 2450 3450 0    60   ~ 0
+DEVICE UNDER TEST
+Text Notes 3650 3450 0    60   ~ 0
+LOAD
+Wire Bus Line
+	1350 3300 2200 3300
+Wire Bus Line
+	2200 3300 2200 3500
+Wire Bus Line
+	2200 3500 1350 3500
+Wire Bus Line
+	1350 3500 1350 3300
+Wire Bus Line
+	2400 3300 2400 3500
+Wire Bus Line
+	2400 3500 3400 3500
+Wire Bus Line
+	3400 3500 3400 3300
+Wire Bus Line
+	3400 3300 2400 3300
+Wire Bus Line
+	3600 3300 3600 3500
+Wire Bus Line
+	3600 3500 3950 3500
+Wire Bus Line
+	3950 3500 3950 3300
+Wire Bus Line
+	3950 3300 3600 3300
+Text Notes 2600 2650 0    60   ~ 0
+CONTROLLER
+Wire Bus Line
+	2550 2500 3250 2500
+Wire Bus Line
+	3250 2500 3250 2700
+Wire Bus Line
+	3250 2700 2550 2700
+Wire Bus Line
+	2550 2700 2550 2500
+Wire Bus Line
+	2550 2600 1750 2600
+Wire Bus Line
+	1750 2600 1750 3300
+Wire Bus Line
+	3250 2600 3800 2600
+Wire Bus Line
+	3800 2600 3800 3300
+Wire Bus Line
+	2900 2700 2900 3300
+Text Notes 4000 3450 0    40   ~ 0
+- current adjustment\n- 555 based switching
+Text Notes 3850 3050 0    40   ~ 0
+- switching\n- I measurement\n- V measurement
+Text Notes 2950 3050 0    40   ~ 0
+- adjustment\n- shutdown\n- diagnostics
+Text Notes 1800 3050 0    40   ~ 0
+- ripple injection\n- I measurement\n- V measurement
+Wire Bus Line
+	2200 3400 2400 3400
+Wire Bus Line
+	3400 3400 3600 3400
+Wire Bus Line
+	3950 3750 3950 3900
+Wire Bus Line
+	3950 3900 2400 3900
+Wire Bus Line
+	2400 3900 2400 3750
+Wire Bus Line
+	2400 3750 3950 3750
+Text Notes 3150 3850 0    60   ~ 0
+FAN
+Text Notes 1400 3850 0    60   ~ 0
+FAN CONTROLLER
+Wire Bus Line
+	2200 3750 2200 3900
+Wire Bus Line
+	2200 3900 1350 3900
+Wire Bus Line
+	1350 3900 1350 3750
+Wire Bus Line
+	1350 3750 2200 3750
+Wire Notes Line
+	2500 3700 2500 3550
+Wire Notes Line
+	2900 3700 2900 3550
+Wire Notes Line
+	3300 3700 3300 3550
+Wire Notes Line
+	3650 3700 3650 3550
+Wire Notes Line
+	3850 3700 3850 3550
+Wire Bus Line
+	2400 3850 2200 3850
+Wire Bus Line
+	2200 3850 2200 3800
+$Comp
+L +24V #PWR5
+U 1 1 55318C9E
+P 1400 3750
+F 0 "#PWR5" H 1400 3600 50  0001 C CNN
+F 1 "+24V" H 1400 3890 50  0000 C CNN
+F 2 "" H 1400 3750 60  0000 C CNN
+F 3 "" H 1400 3750 60  0000 C CNN
+	1    1400 3750
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	1350 3800 1250 3800
+Wire Bus Line
+	1250 3800 1250 2550
+Wire Bus Line
+	1250 2550 2550 2550
+$Comp
+L +24V #PWR4
+U 1 1 55318E09
+P 1400 3300
+F 0 "#PWR4" H 1400 3150 50  0001 C CNN
+F 1 "+24V" H 1400 3440 50  0000 C CNN
+F 2 "" H 1400 3300 60  0000 C CNN
+F 3 "" H 1400 3300 60  0000 C CNN
+	1    1400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D2
+U 1 1 55318EB1
+P 3450 1500
+F 0 "D2" V 3750 1500 50  0000 C CNN
+F 1 "SMAJ36A" V 3650 1500 50  0000 C CNN
+F 2 "" H 3450 1500 60  0000 C CNN
+F 3 "" H 3450 1500 60  0000 C CNN
+	1    3450 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3450 1400
+Connection ~ 3450 1600
+$Comp
+L +24V #PWR3
+U 1 1 55318F8F
+P 2900 2200
+F 0 "#PWR3" H 2900 2050 50  0001 C CNN
+F 1 "+24V" H 2900 2350 50  0000 C CNN
+F 2 "" H 2900 2200 60  0000 C CNN
+F 3 "" H 2900 2200 60  0000 C CNN
+	1    2900 2200
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	2500 2400 3300 2400
+Text Notes 2550 2350 0    60   ~ 0
+low-voltage PS
+Wire Bus Line
+	2500 2200 3300 2200
+Wire Bus Line
+	2500 2200 2500 2400
+Wire Bus Line
+	3300 2200 3300 2400
+Wire Bus Line
+	2900 2400 2900 2500
+Wire Wire Line
+	3800 1400 3800 1350
+Wire Wire Line
+	3800 1600 3800 1650
+Wire Bus Line
+	3400 2500 3400 2200
+Wire Bus Line
+	3400 2200 3800 2200
+Wire Bus Line
+	3800 2200 3800 2500
+Wire Bus Line
+	3800 2500 3400 2500
+Text Notes 3550 2400 0    60   ~ 0
+UI
+Wire Bus Line
+	3250 2550 3450 2550
+Wire Bus Line
+	3450 2550 3450 2500
+Wire Bus Line
+	3300 2300 3400 2300
+Text Notes 1300 2950 0    40   ~ 0
+- adjustment
+Text Notes 1550 3700 0    40   ~ 0
+- 0-24V adjustable\n- 200 mA OCP\n
+$EndSCHEMATC

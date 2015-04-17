@@ -6,7 +6,7 @@ Revision history:
 
 1. 2015-04-12, RP: Initial version
 2. 2015-04-13, RP: Goals refinement, requirements added.
-2. 2015-04-15, RP: size requirement removed, commercial designs, NPN
+2. 2015-04-15, RP: requirement mods, commercial designs, NPN and opAmp designs
 
 
 Project statement
@@ -56,8 +56,7 @@ developed, constructed and delivered.
 of parameters of Meanwell RS-150-XX power supplies series but additional linear power
 supplies are allowed.
 * RF2: Proposed devices should deliver current-limited DC adjustable from 0A (high power
-LED is OFF even in darkness) up to 1.25A to the single load.
-* RF3: Delivered current shall be adjustable.
+LED is OFF even in darkness, i.e. effective LED shutdown) up to 1.25A to the single load.
 
 <!--### Physical requirements
 
@@ -92,6 +91,11 @@ This is basic idea of Operational amplifier based current regulator
 
 ![simple NPN current regulator](./ideas/opAmp-principle1/opAmp-principle1.png)
 
+Simpler idea is presented in following circuit suited for external voltage
+control of 0-125mV range and output impedance Zout << 1k
+
+![simple NPN current regulator](./ideas/opAmp-principle2/opAmp-principle2.png)
+
 
 ### Switched-mode power supplies circuits
 
@@ -102,7 +106,14 @@ This is basic idea of Operational amplifier based current regulator
 
 ### Test tools
 
+Test platform should be able to provide 24V input voltage, shutdown signal,
+adjustment PWM and analog signal and test load. Signal injection to input
+voltage and load switching should be possible with adjustable frequency
+and amplitude. UI should be independent on Personal computer. There should
+be place to accommodate device under test, namely its power transistor
+and an appropriate fan. The device shall feature over-current protection.
 
+![test platform design](./ideas/test_platform/test_platform.png)
 
 Detailed design
 ---------------
@@ -111,9 +122,14 @@ Detailed design
 
 #### NPN based regulator
 
+This is simple NPN regulator. Only adjustment possible here is shutdown.
+
 ![simple NPN current regulator](./boards/npn0/npn0.png)
     
 #### Operational Amplifier based regulators
+
+If Collector-Emitter voltage of transistor in TL431 programmable reference is less than 500mV (it is not specified in
+TL431 datasheet), then TL431 can serve as comparator as in following circuit.
 
 ![simple NPN current regulator](./boards/npn1/npn1.png)
     
