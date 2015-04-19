@@ -109,6 +109,7 @@ control of 0-125mV range and output impedance Zout << 4k7
 #### TL494 based solutions
 
 ![TL494 pinout](./external_docs/tl494_pinout.png)
+
 ![TL494 pinout](./external_docs/tl494_buck.png)
 
 #### LM2576T based solutions
@@ -144,4 +145,9 @@ TL431 datasheet), then TL431 can serve as comparator as in following circuit.
 
 ![simple NPN current regulator](./boards/npn1/npn1.png)
     
+### Switched-mode power supplies circuits
 
+#### TL494 based solution
+#### LM2576T based solution
+
+### Test platform
