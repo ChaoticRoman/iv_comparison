@@ -85,6 +85,9 @@ Following commercial SMPS modules should be evaluated:
 
 ### Linear regulators
 
+Short circuit in case of linear power supplies can lead to catastrophic
+Vin*Iout power dissipation. Such case should be avoided.
+
 #### NPN based regulator
 
 This is basic idea of NPN current regulator
@@ -106,9 +109,14 @@ control of 0-125mV range and output impedance Zout << 4k7
 
 ### Switched-mode power supplies circuits
 
+Important thing to note for boost converter is need to limit maximal
+output voltage and to prevent coil saturation (by proper coil reset).
+
 #### TL494 based solutions
 
 ![TL494 pinout](./external_docs/tl494_pinout.png)
+
+P.A.R.D. = Periodic and Random Deviation noise
 
 ![TL494 pinout](./external_docs/tl494_buck.png)
 
