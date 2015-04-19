@@ -67,6 +67,12 @@ LED is OFF even in darkness, i.e. effective LED shutdown) up to 1.25A to the sin
 System concept
 --------------
 
+### Schedule
+
+* 2015-04-18 Requirements specification done.
+* 2015-04-19 System concept: linear designs done
+* 2015-04-23 Milestone 1: Linear designs tested
+
 ### Commercial SMPS modules to be explored
 
 Following commercial SMPS modules should be evaluated:
@@ -90,20 +96,24 @@ This is basic idea of NPN current regulator
 
 This is basic idea of Operational amplifier based current regulator
 
-![simple NPN current regulator](./ideas/opAmp-principle1/opAmp-principle1.png)
+![simple opAmp current regulator](./ideas/opAmp-principle1/opAmp-principle1.png)
 
 Simpler idea is presented in following circuit suited for external voltage
-control of 0-125mV range and output impedance Zout << 1k
+control of 0-125mV range and output impedance Zout << 4k7
 
-![simple NPN current regulator](./ideas/opAmp-principle2/opAmp-principle2.png)
+![opAmp current regulator](./ideas/opAmp-principle2/opAmp-principle2.png)
 
 
 ### Switched-mode power supplies circuits
 
 #### TL494 based solutions
 
+![TL494 pinout](./external_docs/tl494_pinout.png)
+![TL494 pinout](./external_docs/tl494_buck.png)
 
 #### LM2576T based solutions
+
+![TL494 pinout](./external_docs/lm2576.png)
 
 ### Test tools
 

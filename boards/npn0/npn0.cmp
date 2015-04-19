@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2015-04-11 BZR 5594)-product   date = Wed 15 Apr 2015 02:53:09 AM CEST
+
+BeginCmp
+TimeStamp = /552DB4F6;
+Reference = C1;
+ValeurCmp = 1n;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DB33F;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DC3A6;
+Reference = C3;
+ValeurCmp = 1u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_11.2x7.5mm_RM2.5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DC32E;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DBCA0;
+Reference = C5;
+ValeurCmp = 1n;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D8E7C;
+Reference = P1;
+ValeurCmp = CONN_01X02;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D5C5A;
+Reference = P2;
+ValeurCmp = CONN_01X02;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D8D90;
+Reference = P3;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D5D83;
+Reference = Q1;
+ValeurCmp = TIP122;
+IdModule  = Transistors_TO-220:TO-220_Bipolar-BCE_Horizontal_MountedFromLS_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D898C;
+Reference = Q2;
+ValeurCmp = BC817-40;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D9A44;
+Reference = Q3;
+ValeurCmp = BC817-40;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D7338;
+Reference = R1;
+ValeurCmp = 20k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D8B76;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DA251;
+Reference = R3;
+ValeurCmp = 1R;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D5CC9;
+Reference = R4;
+ValeurCmp = 1R;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /552DB7F3;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+EndListe
