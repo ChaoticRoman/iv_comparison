@@ -9,9 +9,10 @@ Revision history:
 3. 2015-04-15, RP: requirements modified, commercial designs, designing
 4. 2015-04-17, RP: NPN and opAmp designs, test platform
 5. 2015-04-20, RP: requirement RM5 added, requirements release 1
+5. 2015-04-20, RP: requirement review and modifications
 
 
-Project statement
+Statement of Work
 -----------------
 The aim of this effort is to choose simple and reliable LED driver design.
 Both linear and switched mode-power supplies (SMPS) circuits and commercial
@@ -22,10 +23,20 @@ emphasize reliability, efficiency, output ripple, price and size. Input
 voltage should include 24V DC for safety and reasonable efficiency.
 
 
-Requirements specification
+Requirements Specification
 --------------------------
 
-### Mission requirements
+### Functional Requirements
+
+* RF1: Proposed devices should be able to operate from adjustable 12-32V DC
+power supply of parameters of Meanwell RS-150-24 power supply but additional
+small linear power supplies are allowed.
+* RF2: Proposed devices should deliver current-limited DC adjustable up to 1.25A
+to the single load.
+* RF3:  Device shall feature shutdown i.e. high power LED is OFF even in darkness
+for naked eye. Shutdown should be commanded by TTL signal.
+
+### Mission Requirements
 
 * RM1: Commercial LED-drivers should be evaluated.
 * RM2: Linear and SMPS topologies should be designed and studied, at least:
@@ -48,32 +59,24 @@ Requirements specification
     - input/output voltage/current diagnostics
     - price
     - size
-* RM4: Test tools for measurement of inrush current, current rating, regulation,
-efficiency and possible adjustment and diagnostics precision, uniformity and stability
-should be designed, constructed and verified.
-* RM5: Single design should be chosen, tested and characterized. KiCad schematics
+* RM4: Single design should be chosen, tested and characterized. KiCad schematics
 and example layout, BOM, budget and proof-of-concept self-consistent 6-channel device
 shall be delivered.
-
-### Functional requirements
-
-* RF1: Proposed devices should be able to operate from adjustable 12-32V DC
-power supply of parameters of Meanwell RS-150-24 power supply but additional
-small linear power supplies are allowed.
-* RF2: Proposed devices should deliver current-limited DC adjustable from 0A (high power
-LED is OFF even in darkness, i.e. effective LED shutdown) up to 1.25A to the single load.
+* RM5: Test tools for measurement of inrush current, current rating, regulation,
+efficiency and possible adjustment and diagnostics precision, uniformity and stability
+should be designed, constructed and verified.
 
 <!--### Physical requirements
 
 * RD1: Single channel module shall be limited in dimensions by 40mm x 15mm x 10mm.-->
 
 
-System concept
+System Concept
 --------------
 
-### Linear regulators
+### Linear Regulators
 
-#### NPN based regulator
+#### NPN-based regulator
 
 This is basic idea of NPN current regulator
 
@@ -84,16 +87,20 @@ This is basic idea of NPN current regulator
 * Minimal sensing value ca 0.5V means 0.5W@1A loss here.
 * Adjustment is quite difficult.
 * Can be tuned for efficiency>90% for very similar voltages in all channels
-  and only range of intensity settings.
-  
-Design to test is:
+  but only in range of current setting dependent of main DC power supply adjustment.
+
+Simple design to study stability of linear designs is presented in following figure.
+Basic questions aim proper values of capacitors on input (stability vs. inrush current)
+and output (voltage vs. current stability). Effect of intended soft-start capacitor C2
+should be tested and verified. Current regulation and its spread for different Q3 NPNs
+should be studied. Failure modes and line/load regulation shall be studied.
 
 ![simple NPN current regulator](./boards/npn0/npn0.png)
  
 #### Operational amplifier based regulator
 
 This is basic idea of Operational amplifier based current regulator, but such naive implementation
-suffers of horrible error from ground voltage differences.
+will suffer of horrible error from ground voltage differences.
 
 ![simple opAmp current regulator](./ideas/opAmp-principle1/opAmp-principle1.png)
 
@@ -124,6 +131,9 @@ output voltage and to prevent coil saturation (by proper coil reset).-->
 
 #### TL494 step-down and step-up SMPS based solutions
 
+TL494 is basic SMPS chip usable in many different SMPS topologies. TL494 is used in many
+desktop-computer power supplies.
+
 ![TL494 pinout](./external_docs/tl494_pinout.png)
 
 Buck circuit from datasheet.
@@ -134,7 +144,7 @@ P.A.R.D. = Periodic and Random Deviation noise
 
 #### LM2576T based solutions
 
-LM2576T is 50 kHz integrated solution available for well under 100$
+LM2576T is 50 kHz integrated solution available for well-under 1$ per piece.
 
 ![TL494 pinout](./external_docs/lm2576.png)
 
